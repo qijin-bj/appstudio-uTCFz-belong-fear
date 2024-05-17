@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-eef3
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-jcfo-tenant/appstudio/devfile-sample-python-basic-eef3@sha256:721bff63b0c8f9d22d3277700cb28bf10b1fcd8a67b863acca98fda01f4fdbec
+        name: my-python
+        resources: {}
+status: {}
